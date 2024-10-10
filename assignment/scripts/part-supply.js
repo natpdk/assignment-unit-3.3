@@ -65,7 +65,27 @@ console.log( 'Zeroes are: ', zeroes );
 //    'negatives', and 'zeroes', create three new arrays named 'stretchPositives',
 //    'stretchNegatives', and 'stretchZeroes'. 
 console.log('7. Looping through supplyChanges to populate more arrays with positive, negative, and zero values:');
-
+stretchPositives = []
+stretchNegatives = []
+stretchZeroes = []
+for ( num of supplyChanges) {
+  if (num > 0) {
+      this.stretchPositives.push(num);
+  }
+}
+console.log(this.stretchPositives);
+for ( num of supplyChanges) {
+  if (num < 0) {
+      this.stretchNegatives.push(num);
+  }
+}
+console.log(this.stretchNegatives);
+for ( num of supplyChanges) {
+  if (num === 0) {
+      this.stretchZeroes.push(num);
+  }
+}
+console.log(this.stretchZeroes);
 
 // 8. Create a variable called 'totalParts' and assign it a value of 0.
 //    Then, write a loop that adds each value of the 'supplyChanges'
