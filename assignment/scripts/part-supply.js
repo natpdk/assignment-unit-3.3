@@ -110,9 +110,23 @@ console.log("Sum is " + totalParts)
 //    "left over," and the value of 'boxesFilled' should reflect
 //    how many boxes were filled.
 console.log('9. Filling boxes with a "while" loop');
+let parts = 572
+let boxesFilled = 0
+function divideWithRemainder(dividend, divisor) {
+  let quotient = 0;
+  let remainder = dividend;
 
+  while (remainder >= divisor) {
+    remainder -= divisor;
+    quotient++;
+  }
 
+  return [quotient, remainder];
+}
 
+const result = divideWithRemainder(572, 7);
+console.log("Boxes Filled: ", boxesFilled = result[0]);
+console.log("Remaining Parts: ", parts = result[1]);
 
 // DO NOT MODIFY
 // Used for automated testing
