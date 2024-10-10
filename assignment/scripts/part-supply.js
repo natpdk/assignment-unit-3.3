@@ -91,7 +91,12 @@ console.log(this.stretchZeroes);
 //    Then, write a loop that adds each value of the 'supplyChanges'
 //    array to the 'totalParts' variable.
 console.log('8. Looping through supplyChanges to calculate the sum:');
+let totalParts = 0
+for (let i = 0; i < supplyChanges.length; i++) {
+  totalParts += supplyChanges[i];
+}
 
+console.log("Sum is " + totalParts)
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. There are 572
